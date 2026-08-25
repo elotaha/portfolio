@@ -1,0 +1,80 @@
+.skills-grouped-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.skill-group-row {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px dashed var(--border);
+}
+
+.skill-group-row:last-child {
+  border-bottom: none;
+}
+
+.group-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.group-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* Certifications simple list */
+.certs-simple-block {
+  margin-top: 3.5rem;
+  padding-top: 1.5rem;
+}
+
+.certs-simple-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.cert-simple-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  flex-wrap: wrap;
+}
+
+.cert-title-text {
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.cert-issuer-badge {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  background-color: var(--code-bg);
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+.badge-link-mini {
+  font-size: 0.75rem;
+  color: var(--accent);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+@media (max-width: 640px) {
+  .skill-group-row {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+}
